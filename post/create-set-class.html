@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <meta property="og:title" content="F.C.C. - Create Set Class | Mustapha Deen Blog"/>
+  <meta property="og:site_name" content="Mustapha Deen Blog">
+  <meta property="og:author" content="Alexander L. Cannon" />
+  <meta property="og:description" content="I'm Mustapha Deen, and I teach software engineering on this here blog. I know, It's a pleasure to meet you too.  I create content focused primarily on Front End Development ranging from tutorials to job advice, to fun, satirical articles.  Stop by when you like and I hope you find something useful!"/>
+  <meta property="og:image" content="/assets/images/face_small.jpg"/>
+  <meta property="og:url" content="/post/create-set-class">
+  <title>F.C.C. - Create Set Class | Mustapha Deen Blog</title>
+  <link rel="shortcut icon" href="/assets/images/face_small.jpg" type="image/jpg"/>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="application/x-font-ttf" href="/assets/fonts/Ubuntu/Ubuntu-Light.ttf">
+  <link rel="stylesheet" href="/assets/fontawesome-free-5.8.2-web/css/all.css">
+  <link rel="stylesheet" href="/assets/prism.css"/>
+</head>
+<nav class="nav-container">
+  <div class="top-nav">
+    <div id="nav-left">
+      <h5><a href="/">Mustapha Deen Blog</a></h5>
+    </div>
+    <div id="nav-right">
+      <a href="/">Blog</a>
+      <a href="/about">About</a>
+      <a href="/portfolio">Portfolio</a>
+
+    </div>
+  </div>
+  <div id="mobile-menu">
+    <a href="/">Blog</a>
+    <a href="/about">About</a>
+    <a href="/portfolio">Portfolio</a>
+
+  </div>
+</nav>
+<body>
+  <div class="top-nav-after"></div>
+  <div class="social-bar-wrapper">
+  <div class="social-bar">
+  <a class="social-link-btn bg-sms" onclick="alert('Call me at 970-812-2131!')" title="Call Me!">
+    <i class="social-link fas fa-phone" ></i>
+  </a>
+  <a class="social-link-btn bg-email" href="mailto:alexcannon2018@gmail.com" title="Email me!">
+    <i class="fas fa-envelope social-link"></i>
+  </a>
+  <a class="social-link-btn bg-github" href="https://github.com/alex-cannon" target="_blank" rel="noopener noreferrer" title="View my Github">
+    <i class="fab fa-github social-link"></i>
+  </a>
+  <a class="social-link-btn bg-linkedin" href="https://www.linkedin.com/in/alexander-lee-cannon/" target="_blank" rel="noopener noreferrer" title="Talk via Linkedin!">
+    <i class="fab fa-linkedin-in social-link"></i>
+  </a>
+  <a class="social-link-btn bg-youtube" href="https://www.youtube.com/channel/UCLX0n9oWmGkjKmK8iuPf8wQ?view_as=subscriber" target="_blank" rel="noopener noreferrer" title="View my Channel">
+    <i class="fab fa-youtube social-link"></i>
+  </a>
+</div>
+
+</div>
+
+<div class="top-nav-space"></div>
+<div class="section blog-post language-javascript">
+  <a href="/">Posts</a> -> F.C.C. - Create Set Class
+  <h1>F.C.C. - Create Set Class</h1>
+  <p>October 06, 2019 |
+
+      Written by Mustapha Deen
+
+
+  </p>
+
+  <p>Below is a quick solution to the Create Set Class challenge provided by <strong>Free Code Camp</strong>. It’s a very simple challenge and I aim to learn more about <em>sets</em> in the future.</p>
+
+<p><em>In the next few exercises, we will build a full featured Set from scratch.</em></p>
+
+<p><em>this.add function should return true if the value is successfully added and false otherwise</em></p>
+
+<h3 id="my-solution">My Solution:</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function Set() {
+    // the var collection will hold our set
+    var collection = [];
+    // this method will check for the presence of an element and return true or false
+    this.has = function(element) {
+        return (collection.indexOf(element) !== -1);
+    };
+    // this method will return all the values in the set
+    this.values = function() {
+        return collection;
+    };
+
+    // This is the function that needed added
+    // It's very simple!
+    this.add = function(element) {
+        if (!this.has(element)) {
+            collection.push(element);
+            return true;
+        }
+        return false;
+    }
+}
+</code></pre></div></div>
+
+<p>Thanks for reading!</p>
+
+</div>
+
+<footer class="section">
+  <div class="row">
+    <div class="col">
+      <p>Get in touch through any of the services below!</p>
+      <div class="social-bar">
+  <a class="social-link-btn bg-sms" onclick="alert('Call me at 970-812-2131!')" title="Call Me!">
+    <i class="social-link fas fa-phone" ></i>
+  </a>
+  <a class="social-link-btn bg-email" href="mailto:alexcannon2018@gmail.com" title="Email me!">
+    <i class="fas fa-envelope social-link"></i>
+  </a>
+  <a class="social-link-btn bg-github" href="https://github.com/alex-cannon" target="_blank" rel="noopener noreferrer" title="View my Github">
+    <i class="fab fa-github social-link"></i>
+  </a>
+  <a class="social-link-btn bg-linkedin" href="https://www.linkedin.com/in/alexander-lee-cannon/" target="_blank" rel="noopener noreferrer" title="Talk via Linkedin!">
+    <i class="fab fa-linkedin-in social-link"></i>
+  </a>
+  <a class="social-link-btn bg-youtube" href="https://www.youtube.com/channel/UCLX0n9oWmGkjKmK8iuPf8wQ?view_as=subscriber" target="_blank" rel="noopener noreferrer" title="View my Channel">
+    <i class="fab fa-youtube social-link"></i>
+  </a>
+</div>
+
+    </div>
+    <div class="col">
+      <p>Welcome to my Blog! :) My Name is Mustapha Deen. I'm a Software Engineer. Here you will find Soft Tutorials, interesting projects, Life Updates, and more!</p>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <p>This website was made with <i class="fas fa-heart"></i> By Mustapha Deen</p>
+      <p>&copy; Alexander L. Cannon 2019</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/responsive.js"></script>
+<script src="/assets/projectbar.js"></script>
+<script src="/assets/prism.js"></script>
+</body>
